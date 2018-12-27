@@ -1,4 +1,9 @@
 function convertToRoman(num) {
+    
+    /*  the decimal number needs to be broken into its constitutent unit places so it can be properly converted.
+        The code below runs from the ones place to the thousands place, although in practice the converstion process
+        itself would work in the opposite direction.  This is a brute force method of checking each digit and converting
+        them individually to roman numerals, then concatenating them at the end of the process.  */
 
     let numAsString = num.toString();
     let numLength = numAsString.length;
